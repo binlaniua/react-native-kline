@@ -111,6 +111,9 @@
         [self addSubview:_painterView];
          __weak typeof(self) weakSelf = self;
         _painterView.showInfoBlock = ^(KLineModel * _Nonnull model, BOOL isLeft) {
+             if (self._isLine){
+                return;
+            }
             weakSelf.infoView.model = model;
             [weakSelf addSubview:weakSelf.infoView];
             CGFloat padding = 5;
