@@ -267,7 +267,9 @@ public class MainRender extends BaseRender {
      */
     @SuppressLint("DefaultLocale")
     protected void drawSelector(BaseKChartView view, Canvas canvas, float[] values) {
-
+        if (view.getKlineStatus().showLine()){
+            return;
+        }
         int index = view.getSelectedIndex();
 
         strings[0] = view.getTimeDate(index);
