@@ -11,9 +11,9 @@
 #define Color(rgbValue)  [UIColor rgbFromHex:rgbValue]
 
   //背景颜色
-#define ChartColors_bgColor   Color(0xFF18181A)
-#define ChartColors_kLineColor   Color(0xFF18181A)
-#define ChartColors_gridColor   Color(0xFF2F2F31)
+#define ChartColors_bgColor   Color(0xff06141D)
+#define ChartColors_kLineColor  Color(0xff4C86CD)// Color(0xFF18181A)
+#define ChartColors_gridColor  Color(0xff4c5c74)
 #define ChartColors_ma5Color   Color(0xffC9B885)
 #define ChartColors_ma10Color   Color(0xff6CB0A6)
 #define ChartColors_ma30Color   Color(0xff9979C6)
@@ -45,7 +45,7 @@
 #define ChartColors_markerBorderColor   Color(0xffFFFFFF)
 
 //选中后显示值背景的填充颜色
-#define ChartColors_markerBgColor   Color(0xff0D1722)
+#define ChartColors_markerBgColor    Color(0xff0D1722)
 
 //实时线颜色等
 #define ChartColors_realTimeBgColor   Color(0xff0D1722)
@@ -55,7 +55,7 @@
 
 //实时线
 #define ChartColors_realTimeLineColor   Color(0xffffffff)
-#define ChartColors_realTimeLongLineColor   Color(0xff4C86CD)
+#define ChartColors_realTimeLongLineColor  Color(0xffffffff) // Color(0xff4C86CD)
 
 
 //表格右边文字颜色
