@@ -472,6 +472,8 @@
 }
 
 -(void)drawTopText:(CGContextRef)context curPoint:(KLineModel *)curPoint {
+    //如果是分时图,不需要top
+    if (_isLine) return;
     [_mainRenderer drawTopText:context curPoint:curPoint];
     if(_volRenderer != nil) {
         [_volRenderer drawTopText:context curPoint:curPoint];
