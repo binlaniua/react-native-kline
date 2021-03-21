@@ -111,7 +111,7 @@
         [self addSubview:_painterView];
          __weak typeof(self) weakSelf = self;
         _painterView.showInfoBlock = ^(KLineModel * _Nonnull model, BOOL isLeft) {
-             if (self._isLine){
+             if (_isLine){
                 return;
             }
             weakSelf.infoView.model = model;
